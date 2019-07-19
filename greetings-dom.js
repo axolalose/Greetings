@@ -18,6 +18,7 @@ showNumber.innerHTML = counting;
 function GreetingsDom() {
     var input = textBoxElem.value
     console.log(input)
+    var matches = name.match(/[a-zA-Z]+/g);
     var radioBtnChecked = document.querySelector("input[name='check']:checked");
     if (radioBtnChecked) {
         var check = radioBtnChecked.value
