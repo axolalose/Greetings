@@ -46,7 +46,7 @@ function Greetings(loc) {
     }
 }
 else{
-    return" Not valid "
+    return" Please enter the name "
 }
 }
 

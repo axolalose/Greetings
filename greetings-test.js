@@ -21,19 +21,12 @@ describe("Greetings",function(){
         nameTest.greet("Zikhona");
         assert.equal(1,  nameTest.count());
     })
-//     it("When I click on any language without entering the name", function(){
-//         var nameTest = Greetings();
-//         nameTest.greet("name or lang not provided");
-//         assert.equal(1,  nameTest.count());
-//     })
-//     it("When I type in any name without clicking the language", function(){
-//         var nameTest = Greetings();
-//         nameTest.greet("name or lang not provided");
-//         assert.equal(1,  nameTest.count());
-//     })
-//     it("When I type in numbers should return unvalid", function(){
-//         var nameTest = Greetings();
-//         nameTest.greet("not valid");
-//         assert.equal(1,  nameTest.count());
-//     })
+    it("Should return count when you great in different names", function(){
+        var nameGreeted = Greetings();
+        nameGreeted.greet("Zikho");
+        nameGreeted.greet("Phelo");
+        nameGreeted.greet("Mandy");
+
+        assert.equal(3,  nameGreeted.count());
+         })
  })
